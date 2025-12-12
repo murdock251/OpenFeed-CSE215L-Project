@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="700.0" prefWidth="800.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.controllers.PostDetailController">
+    <children>
+        <!-- Header -->
+        <HBox styleClass="nav-bar" alignment="CENTER_LEFT" spacing="15.0">
+            <padding>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+            </padding>
+            <children>
+                <Label styleClass="page-title" text="Post Details">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <Button fx:id="backButton" styleClass="btn-back" mnemonicParsing="false" onAction="#handleBack" text="← Back to Feed">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+
+        <Separator styleClass="nav-separator" />
+
+        <!-- Main Content -->
+        <ScrollPane styleClass="main-scroll" fitToWidth="true" VBox.vgrow="ALWAYS">
+            <content>
+                <VBox spacing="25.0">
+                    <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                    </padding>
+                    <children>
+                        <!-- Post Card -->
+                        <VBox styleClass="post-detail-card" spacing="15.0">
+                            <children>
+                                <!-- Author Header -->
+                                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                    <children>
+                                        <Label fx:id="authorLabel" styleClass="post-author" text="Author: Unknown">
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+
+                                        <Region HBox.hgrow="ALWAYS" />
+
+                                        <Label fx:id="timestampLabel" styleClass="post-time" text="Posted: Unknown">
+                                            <font>
+                                                <Font size="12.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+
+                                <!-- Post Type Badge -->
+                                <Label fx:id="postTypeLabel" styleClass="post-type-badge" text="Type: Unknown" />
+
+                                <Separator styleClass="content-separator" />
+
+                                <!-- Post Content -->
+                                <Label fx:id="contentLabel" styleClass="post-content-detail" text="Content will appear here..." wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+
+                                <Separator styleClass="content-separator" />
+
+                                <!-- Like Section -->
+                                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                                    <children>
+                                        <Label fx:id="likesLabel" styleClass="stats-label" text="👍 0 Likes">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Label>
+
+                                        <Button fx:id="likeButton" styleClass="btn-like-detail" mnemonicParsing="false" onAction="#handleLike" text="👍 Like" prefWidth="120.0">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+
+                        <!-- Comments Section -->
+                        <VBox spacing="15.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                    <children>
+                                        <Label styleClass="section-title" text="Comments">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+
+                                        <Label fx:id="commentCountLabel" styleClass="comment-count" text="(0)">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+
+                                <!-- Comments Container -->
+                                <VBox fx:id="commentsContainer" styleClass="comments-container" spacing="12.0" />
+                            </children>
+                        </VBox>
+
+                        <!-- Add Comment Section -->
+                        <VBox styleClass="add-comment-section" spacing="12.0">
+                            <children>
+                                <Label styleClass="field-label" text="Add a Comment">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+
+                                <TextArea fx:id="commentArea" styleClass="comment-textarea" prefHeight="100.0" promptText="Write your comment here..." wrapText="true" />
+
+                                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                    <children>
+                                        <Button fx:id="addCommentButton" styleClass="btn-add-comment" mnemonicParsing="false" onAction="#handleAddComment" text="💬 Add Comment" prefWidth="180.0">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Button>
+
+                                        <Label fx:id="charCountLabel" styleClass="char-count" text="0 / 300 characters" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>
