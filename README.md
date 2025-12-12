@@ -135,5 +135,5 @@ OpenFeed successfully demonstrates a robust application of OOP principles and MV
 It integrates real-world features — login, posts, likes, comments, and data persistence — to form a complete and maintainable software system.
 
 📘 <b>Course:</b> CSE215 – Programming Language II <br>
-🏫 <b>North South University<b> <br>
+🏫 <b>North South University</b> <br>
 👨‍🏫 <b>Instructor:</b> Professor Dr. Md. Rashedur Rahman <br>
