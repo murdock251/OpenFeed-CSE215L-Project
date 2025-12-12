@@ -109,7 +109,7 @@ All user and post data are stored in text files (`users.txt`, `posts.txt`, `comm
 ## ⚙️ How to Run
 
 1. Clone this repository:
-      ```bash
+```bash
    git clone https://github.com/yourusername/OpenFeed.git
 ```
 3. Open the project in IntelliJ IDEA or VS Code.
