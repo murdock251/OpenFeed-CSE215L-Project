@@ -97,16 +97,27 @@ All user and post data are stored in text files (`users.txt`, `posts.txt`, `comm
 ## 🖥️ GUI Previews
 
 - **Login Screen**
+  
   <img width="999" height="654" alt="Screenshot 2025-12-12 180241" src="https://github.com/user-attachments/assets/3428b780-6865-40c5-914e-b343a533fc1d" />
+  
 - **Register Screen**
+  
   <img width="983" height="646" alt="Screenshot 2025-12-12 180211" src="https://github.com/user-attachments/assets/ede19fd2-e9ce-4934-8604-cc33c6c7d20a" />
+  
 - **Feed with Posts**
+  
   <img width="990" height="859" alt="Screenshot 2025-12-12 180343" src="https://github.com/user-attachments/assets/596e0c9e-26f4-4d0a-845e-314a1e64ab0c" />
+  
 - **Comments Section**
+  
   <img width="996" height="1016" alt="Screenshot 2025-12-12 181140" src="https://github.com/user-attachments/assets/c3c73997-eb7a-4160-a497-ecfe8875c538" />
+  
 - **Profile View**
+  
   <img width="999" height="1019" alt="Screenshot 2025-12-12 181824" src="https://github.com/user-attachments/assets/ca549db8-1b69-4a62-b2a8-322ab55763cb" />
+  
 - **Edit Profile**
+  
   <img width="995" height="775" alt="Screenshot 2025-12-12 180412" src="https://github.com/user-attachments/assets/190c5fcf-4396-4389-ad13-cc7189477bd7" />
 
 ---
