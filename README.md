@@ -112,14 +112,14 @@ All user and post data are stored in text files (`users.txt`, `posts.txt`, `comm
 ```bash
    git clone https://github.com/yourusername/OpenFeed.git
 ```
----
+
 2. Open the project in IntelliJ IDEA or VS Code.
 3. Make sure you have JavaFX SDK installed.
 4. Add the following VM options to run JavaFX:
 ```bash
 --module-path "C:\path\to\javafx-sdk\lib" --add-modules javafx.controls,javafx.fxml
 ```
----
+
 5. Run the Main.java file
    
 ## 📚 Technologies Used
