@@ -134,6 +134,6 @@ All user and post data are stored in text files (`users.txt`, `posts.txt`, `comm
 OpenFeed successfully demonstrates a robust application of OOP principles and MVC architecture.
 It integrates real-world features — login, posts, likes, comments, and data persistence — to form a complete and maintainable software system.
 
-📘 Course: CSE215 – Programming Language II
-🏫 North South University
-👨‍🏫 Instructor: Professor Dr. Md. Rashedur Rahman
+📘 <b>Course:</b> CSE215 – Programming Language II <br>
+🏫 <b>North South University<b> <br>
+👨‍🏫 <b>Instructor:</b> Professor Dr. Md. Rashedur Rahman <br>
