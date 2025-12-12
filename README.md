@@ -119,12 +119,12 @@ All user and post data are stored in text files (`users.txt`, `posts.txt`, `comm
    
 ## 📚 Technologies Used
 
-Java 17+
-JavaFX
-MVC Architecture
-Object-Oriented Programming (OOP)
-File I/O (java.io)
-Custom Exception Handling
+- Java 17+
+- JavaFX
+- MVC Architecture
+- Object-Oriented Programming (OOP)
+- File I/O (java.io)
+- Custom Exception Handling
 
 ## ✅ Conclusion
 
