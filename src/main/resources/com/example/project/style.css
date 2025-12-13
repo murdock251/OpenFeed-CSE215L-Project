@@ -11,10 +11,10 @@
 }
 .inside {
 /* Font settings */
-    -fx-font-family: "Arial";   /* Change to any font you like */
-    -fx-font-size: 16px;        /* Set font size */
-    -fx-font-weight: bold;      /* Optional: normal, bold, etc. */
-    -fx-text-fill: white;       /* Optional: text color */
+    -fx-font-family: "Arial";   
+    -fx-font-size: 16px;        
+    -fx-font-weight: bold;      
+    -fx-text-fill: white;       
 }
 .title-text {
     -fx-font-size: 24px;
@@ -635,5 +635,6 @@
     -fx-text-fill: #7f8c8d;
     -fx-font-size: 12px;
 }
+
 
 
