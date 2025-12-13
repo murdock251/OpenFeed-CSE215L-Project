@@ -54,7 +54,6 @@ public class FileManager {
                     );
                     users.add(user);
                 } else if (parts.length == 4) {
-                    // Old format compatibility - migrate old users
                     User user = new User(
                             parts[0],  // userId
                             parts[1],  // username
@@ -192,3 +191,4 @@ public class FileManager {
     }
 
 }
+
