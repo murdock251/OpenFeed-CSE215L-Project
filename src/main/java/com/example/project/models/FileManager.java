@@ -8,7 +8,6 @@ public class FileManager {
     private static final String POSTS_FILE = "posts.txt";
     private static final String COMMENTS_FILE = "comments.txt";
 
-    // Save users to file
     public static void saveUsers(ArrayList<User> users) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(USERS_FILE));
         try {
@@ -29,7 +28,6 @@ public class FileManager {
         }
     }
 
-    // Load users from file
     public static ArrayList<User> loadUsers() throws IOException {
         ArrayList<User> users = new ArrayList<>();
         File file = new File(USERS_FILE);
@@ -78,9 +76,6 @@ public class FileManager {
 
         return users;
     }
-
-    // Keep existing savePosts, loadPosts, saveComments, loadComments methods
-    // (No changes needed for these)
 
     public static void savePosts(ArrayList<Post> posts) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(POSTS_FILE));
@@ -195,4 +190,5 @@ public class FileManager {
 
         return comments;
     }
+
 }
